@@ -1,0 +1,39 @@
+.header-nav {
+
+
+  &__list {
+    display: flex;
+
+    li {
+      margin: 0 25px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+
+  &__link {
+    color: $white;
+    position: relative;
+
+
+    &.active {
+      &:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: $white;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
+    }
+  }
+
+}

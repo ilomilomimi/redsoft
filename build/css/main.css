@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'cera_round_probold';
+  src: url("../../src/fonts/cera_round_pro_bold-webfont.eot");
+  src: url("../../src/fonts/cera_round_pro_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/cera_round_pro_bold-webfont.woff2") format("woff2"), url("../../src/fonts/cera_round_pro_bold-webfont.woff") format("woff"), url("../../src/fonts/cera_round_pro_bold-webfont.ttf") format("truetype"), url("../../src/fonts/cera_round_pro_bold-webfont.svg#cera_round_probold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'cera_round_promedium';
+  src: url("../../src/fonts/ceraroundpro-medium-webfont.eot");
+  src: url("../../src/fonts/ceraroundpro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/ceraroundpro-medium-webfont.woff2") format("woff2"), url("../../src/fonts/ceraroundpro-medium-webfont.woff") format("woff"), url("../../src/fonts/ceraroundpro-medium-webfont.ttf") format("truetype"), url("../../src/fonts/ceraroundpro-medium-webfont.svg#cera_round_promedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  border-style: none; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.main-wrapper {
+  max-width: 1160px;
+  margin: 0 auto; }
+
+.header {
+  background-image: url("../../src/img/header_bg.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat; }
+  .header__top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 15px 0; }
+  .header__logo {
+    width: 200px; }
+
+.header-nav__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .header-nav__list li {
+    margin: 0 25px; }
+    .header-nav__list li:first-child {
+      margin-left: 0; }
+    .header-nav__list li:last-child {
+      margin-right: 0; }
+
+.header-nav__link {
+  color: #ffffff;
+  position: relative; }
+  .header-nav__link.active:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -10px;
+    left: 0; }
+
+body {
+  font-family: 'cera_round_promedium';
+  font-size: 16px; }
