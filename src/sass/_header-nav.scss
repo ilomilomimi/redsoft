@@ -25,13 +25,13 @@
 
     &.active {
       &:before {
-        content: "";
-        width: 5px;
-        height: 5px;
-        background-color: $white;
+        content:"\2022";
+        color: $white;
+        font-size: 15px;
+        font-weight: 700;
         position: absolute;
-        bottom: -10px;
-        left: 0;
+        bottom: -15px;
+        left: 50%;
       }
     }
   }

@@ -1,3 +1,70 @@
 .about {
+  background-color: $white;
+  position: relative;
+  overflow: hidden;
 
+  &__line {
+    //position: absolute;
+  }
+  &__pulse {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+
+  &__inner {
+    padding-top: 150px;
+    padding-bottom: 130px;
+    display: flex;
+  }
+  &__phone {
+    width: 40%;
+    text-align: center;
+  }
+  &__info {
+    width: 60%;
+    padding-top: 90px;
+  }
+  &__title {
+    color: $blue;
+    padding-bottom: 35px;
+  }
+  &__text {
+    color: $blue;
+  }
+  &__list {
+    color: $blue;
+    padding: 30px 0 30px 15px;
+
+    li {
+      position: relative;
+      padding-bottom: 25px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+      &:before {
+        content:"\2022";
+        color: $turquoise;
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        left: -15px;
+        line-height: 15px;
+        top: 0;
+      }
+    }
+  }
+  &__btn {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .about {
+    &__pulse {
+      transform: translate(10%, 10%);
+    }
+  }
 }

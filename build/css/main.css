@@ -87,7 +87,8 @@ h1 {
   background-image: url("../../src/img/header_bg.png");
   -webkit-background-size: cover;
           background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position-x: 50%; }
   .header__top {
     display: -webkit-box;
     display: -webkit-flex;
@@ -139,13 +140,13 @@ h1 {
   color: #ffffff;
   position: relative; }
   .header-nav__link.active:before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background-color: #ffffff;
+    content: "\2022";
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
     position: absolute;
-    bottom: -10px;
-    left: 0; }
+    bottom: -15px;
+    left: 50%; }
 
 .btn {
   display: inline-block;
@@ -182,6 +183,58 @@ h1 {
     background-color: rgba(255, 255, 255, 0.51); }
     .slider-control__line.active {
       background-color: #ffffff; }
+
+.about {
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden; }
+  .about__pulse {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .about__inner {
+    padding-top: 150px;
+    padding-bottom: 130px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .about__phone {
+    width: 40%;
+    text-align: center; }
+  .about__info {
+    width: 60%;
+    padding-top: 90px; }
+  .about__title {
+    color: #60759d;
+    padding-bottom: 35px; }
+  .about__text {
+    color: #60759d; }
+  .about__list {
+    color: #60759d;
+    padding: 30px 0 30px 15px; }
+    .about__list li {
+      position: relative;
+      padding-bottom: 25px; }
+      .about__list li:last-child {
+        padding-bottom: 0; }
+      .about__list li:before {
+        content: "\2022";
+        color: #16afe0;
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        left: -15px;
+        line-height: 15px;
+        top: 0; }
+  .about__btn {
+    margin-top: 10px; }
+
+@media screen and (max-width: 1400px) {
+  .about__pulse {
+    -webkit-transform: translate(10%, 10%);
+        -ms-transform: translate(10%, 10%);
+            transform: translate(10%, 10%); } }
 
 body {
   font-family: 'cera_round_promedium';
