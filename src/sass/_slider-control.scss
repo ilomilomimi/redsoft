@@ -1,0 +1,23 @@
+.slider-control {
+  width: 100%;
+  display: flex;
+  padding: 7px 16px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: solid 1px rgba(255, 255, 255, 0.51);
+
+  &__prev, &__next {
+    width: 50%;
+    cursor: pointer;
+  }
+  &__line {
+    width: 16px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.51);
+
+    &.active {
+      background-color: $white;
+    }
+  }
+
+}

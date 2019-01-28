@@ -9,8 +9,31 @@
     justify-content: space-between;
     padding: 15px 0;
   }
+  &__content {
+    padding-top: 110px;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
 
   &__logo {
     width: 200px;
+  }
+  &__title {
+    padding-bottom: 50px;
+  }
+  &__description {
+    font-size: 24px;
+    line-height: 1.5;
+    color: $white;
+    padding-bottom: 40px;
+  }
+  &__btn-content {
+    margin-bottom: 150px;
+  }
+  &__slider {
+    max-width: 75px;
+    margin: 0 auto;
+    padding-bottom: 45px;
   }
 }
