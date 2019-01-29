@@ -21,6 +21,7 @@
   &__link {
     color: $white;
     position: relative;
+    transition: color ease-in-out 0.15s;
 
 
     &.active {
@@ -33,6 +34,11 @@
         bottom: -15px;
         left: 50%;
       }
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transition: color ease-in-out 0.3s;
     }
   }
 

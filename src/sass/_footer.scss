@@ -1,0 +1,52 @@
+.footer {
+  background-color: $blue-dark;
+
+  &__top {
+    padding: 60px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px $blue-border;
+  }
+  &__logo {
+    width: 160px;
+  }
+
+  &__bottom {
+    padding: 35px 0 30px;
+  }
+
+  &__list {
+    display: flex;
+
+    li {
+      margin: 0 40px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__link {
+    color: $white;
+    transition: color ease-in-out 0.15s;
+
+    &:hover {
+      opacity: 0.8;
+      transition: color ease-in-out 0.3s;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    color: $white;
+    text-align: center;
+
+    &--pink {
+      color: $pink;
+    }
+
+  }
+}
